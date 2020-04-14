@@ -2,16 +2,19 @@ package model;
 
 import emum.CountTryEnum;
 import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.CountDownLatch;
+
 /**
+ * desc 倒计时，初始化一个数据，
+ * （countDown()）每次减一，
+ * （await()）直到0，才能往下走
  * @author zyq
  * @version 1.0
  * @date 2020/4/13
  */
 @Data
-public class CountDownLactTest {
+public class CountDownLactDemo {
     public static void main(String[] args) throws Exception {
 
         CountDownLatch countDownLatch = new CountDownLatch(4);
